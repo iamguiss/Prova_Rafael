@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style1.css">
+    <title>Loja de Móveis</title>
+    
+</head>
+<body>
+    <header>
+        <a href="index.html" style="color: white;"><h1>Paisagismo do Iamguiss</h1></a>
+        <nav>
+            <ul>
+                <li><a href="sobre.html" style="color: white;">Sobre nossa Empresa</a></li>
+                <li><a href="contato.html" style="color: white;">Nosso contato</a></li>
+            </ul>
+        </nav>
+        <button id="login-btn" class="form-input">Entrar</button>
+    </header>
+ 
+    <main>
+       
+        <div class="product">
+            <img src="img/cristo1.jpg" alt="cristo">
+            <h2>Estatua do cristo</h2>
+            <p>Estatua do cristo redentoro para colocar no seu jardim e deixa-lo mais bonito.<p>
+            <span>R$ 2999,00</span>
+        </div>
+        <div class="product">
+            <img src="img/estatua.jpg" alt="Cama">
+            <h2>Estatua</h2>
+            <p>Estatua do cristo redentoro para colocar no seu jardim e deixa-lo mais bonito.</p>
+            <span>R$ 2399,00</span>
+        </div>
+        <div class="product">
+            <img src="img/paisagem1.jpg" alt="Cadeira">
+            <h2>Paisagismo em casa</h2>
+            <p>Realizamos paisagimos na sua casa.</p>
+            <span>R$ 5299,00</span>
+        </div>
+        <div class="product">
+            <img src="img/vaso1.jpg" alt="Mesa de Jantar">
+            <h2>Vaso para suas plantas</h2>
+            <p>Elegante e resistente para suas plantas.</p>
+            <span>R$ 459,00</span>
+        </div>
+    </main>
+ 
+   
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Nome de usuário">
+                <input type="password" placeholder="Senha">
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+  
+    <script>
+   
+        document.getElementById('login-btn').addEventListener('click', function() {
+            document.getElementById('login-modal').style.display = 'block';
+        });
+ 
+       
+        document.getElementsByClassName('close')[0].addEventListener('click', function() {
+            document.getElementById('login-modal').style.display = 'none';
+        });
+ 
+     
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+           
+            window.location.href = 'https://www.artbarro.com.br';
+        });
+ 
+       
+        document.getElementById('back-btn').addEventListener('click', function() {
+            window.location.href = window.location.origin + window.location.pathname;
+        });
+    </script>
+</body>
+</html>

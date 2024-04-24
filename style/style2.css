@@ -1,0 +1,66 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.h1{
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.form-input{
+    margin-bottom: 10px;
+    width: 300px;
+    height: 30px;
+    padding: 2px;
+    border-bottom: none;
+}
+
+.form-submit{
+    width: 150px;
+    height: 40px;
+    background-color: #007;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: inherit;
+    display: block;
+}
+
+.form-submit + .form-submit {
+    margin-top: 10px; /* Define a distância entre os botões */
+}
